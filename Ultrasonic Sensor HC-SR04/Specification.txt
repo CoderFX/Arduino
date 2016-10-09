@@ -1,0 +1,7 @@
+Specification
+
+Power supply: 5V DC
+Effectual angle: < 30 degrees
+Ranging distance: 2cm to 500 cm
+Resolution: 1 cm
+Ultrasonic Frequency: 40k Hz

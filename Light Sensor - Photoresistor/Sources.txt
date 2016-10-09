@@ -1,0 +1,4 @@
+http://www.me.umn.edu/courses/me2011/arduino/technotes/photocell/photocell.html
+https://www.sparkfun.com/products/9088
+https://learn.sparkfun.com/tutorials/photocell-hookup-guide
+http://bildr.org/2012/11/photoresistor-arduino/

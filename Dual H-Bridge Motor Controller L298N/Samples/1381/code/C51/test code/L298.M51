@@ -1,0 +1,116 @@
+BL51 BANKED LINKER/LOCATER V5.03                                                        07/05/2012  11:39:27  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V5.03, INVOKED BY:
+E:\KEIL\C51\BIN\BL51.EXE code.obj TO L298
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  code.obj (CODE)
+  E:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  E:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  L298 (CODE)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0008H     UNIT         ?DT?CODE
+            DATA    0010H     0002H     UNIT         _DATA_GROUP_
+            IDATA   0012H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     008CH     UNIT         ?C_C51STARTUP
+            CODE    008FH     0064H     UNIT         ?PR?MAIN?CODE
+            CODE    00F3H     002BH     UNIT         ?PR?_DELAY?CODE
+            CODE    011EH     000DH     UNIT         ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   L298 (CODE)
+
+
+SEGMENT                          DATA_GROUP 
+  +--> CALLED SEGMENT          START    LENGTH
+----------------------------------------------
+?C_C51STARTUP                  -----    -----
+  +--> ?PR?MAIN?CODE
+  +--> ?C_INITSEG
+
+?PR?MAIN?CODE                  0010H    0002H
+  +--> ?PR?_DELAY?CODE
+
+
+
+SYMBOL TABLE OF MODULE:  L298 (CODE)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        CODE
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  C:008FH         PUBLIC        main
+BL51 BANKED LINKER/LOCATER V5.03                                                      07/05/2012  11:39:27  PAGE 2
+
+
+  D:0008H         PUBLIC        phaseccw
+  D:000CH         PUBLIC        phasecw
+  C:00FEH         PUBLIC        _delay
+  -------         PROC          L?0027
+  -------         ENDPROC       L?0027
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        x
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0002H         SYMBOL        j
+  -------         ENDDO         
+  C:00FEH         LINE#         11
+  C:00FEH         LINE#         12
+  C:00FEH         LINE#         14
+  C:0108H         LINE#         15
+  C:011DH         LINE#         16
+  -------         ENDPROC       _DELAY
+  -------         PROC          MAIN
+  -------         DO            
+  D:0082H         SYMBOL        i
+  D:0010H         SYMBOL        j
+  -------         ENDDO         
+  C:008FH         LINE#         17
+  C:008FH         LINE#         18
+  C:008FH         LINE#         20
+  C:008FH         LINE#         21
+  C:008FH         LINE#         22
+  C:0094H         LINE#         23
+  C:0094H         LINE#         24
+  C:0099H         LINE#         25
+  C:0099H         LINE#         26
+  C:009BH         LINE#         27
+  C:009EH         LINE#         28
+  C:00A7H         LINE#         29
+  C:00B6H         LINE#         31
+  C:00B9H         LINE#         32
+  C:00C0H         LINE#         34
+  C:00C5H         LINE#         35
+  C:00C5H         LINE#         36
+  C:00CAH         LINE#         37
+  C:00CAH         LINE#         38
+  C:00CCH         LINE#         39
+  C:00CFH         LINE#         40
+  C:00D8H         LINE#         41
+  C:00E7H         LINE#         43
+  C:00EAH         LINE#         44
+  C:00F1H         LINE#         45
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        CODE
+
+Program Size: data=19.0 xdata=0 code=299
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

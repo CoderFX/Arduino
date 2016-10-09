@@ -1,0 +1,11 @@
+Bought from: http://anodas.lt/sd-korteliu-skaitytuvas?search=sd&category_id=0
+
+CS: D4
+MOSI: D11
+MISO: D12
+SCL: D13
+
+Voltage: 3.3V and 5V
+SPI
+Works with SD, SDHC, TF
+Limits: SD (<=16G); Micro SD (<=2G); SDHC (<=16G)

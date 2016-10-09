@@ -1,0 +1,3 @@
+http://www.elecrow.com/wiki/index.php?title=Tiny_RTC
+http://smart-prototyping.com/Arduino-Tiny-RTC-I2C-real-time-clock-module-24C32-storage-DS1307.html
+http://www.hobbyist.co.nz/?q=real_time_clock

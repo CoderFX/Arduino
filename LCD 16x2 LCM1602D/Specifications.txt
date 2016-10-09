@@ -1,0 +1,21 @@
+Aprašymas:
+
+Tai standartinis ekranas, paremtas HD44780, kuris talpina 2 eilutes po 16 simboliu. LCD ekranas atvaizduoja baltus simbolius melyname fone su apšvietimu. Ekranas turi lygiagrecia sasaja, todel norint ji prijungti 4-bit'u režime jums reikes 7 GPIO pin'u,o  8 bit'u režime - 11GPIO pin'u .
+
+Savybes:
+
+• Platus matymo kampas ir didelis kontrastas
+• Integruotas LCD valdiklis, atitinkantis industrini standarta HD44780
+• +5V DC LED apšvietimas
+• Apšvietimui nereikia atskiro energijos šaltinio
+• Palaikoma 4 ir 8 bit'u sasaja
+•  Ekrane telpa 2 eilutes po 16 simboliu
+• Veikia su 5V DC
+• 16 poziciju male header'is
+
+Dydžiai:
+
+• Modulio dydis(Plotis x Ilgis x Storis): 80mm X 36mm X 14mm
+• Black Metal Bezel (Plotisx Ilgis): 72.2mm X 24.1mm
+• Viewing Area (Plotis x Ilgis): 64.5mm X 14.5mm
+

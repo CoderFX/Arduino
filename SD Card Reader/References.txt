@@ -1,0 +1,3 @@
+https://www.arduino.cc/en/Reference/SD
+http://www.oddwires.com/sd-card-reader-module-for-arduino-and-other-mcus/
+http://www.oddwires.com/sd-card/

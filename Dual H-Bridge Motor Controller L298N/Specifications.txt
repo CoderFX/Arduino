@@ -1,0 +1,8 @@
+Double H bridge Drive Chip: L298N
+Logical voltage: 5V Drive voltage: 5V-35V
+Logical current: 0-36mA Drive current: 2A (MAX single bridge)
+Max power: 25W
+Dimensions: 43 x 43 x 26mm
+Weight: 26g
+
+http://www.icstation.com/dual-bridge-stepper-motor-drive-controller-arduino-l298-p-1381.html

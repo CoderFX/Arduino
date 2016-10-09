@@ -1,0 +1,71 @@
+C51 COMPILER V7.06   CODE                                                                  07/05/2012 11:39:27 PAGE 1   
+
+
+C51 COMPILER V7.06, COMPILATION OF MODULE CODE
+OBJECT MODULE PLACED IN code.OBJ
+COMPILER INVOKED BY: E:\Keil\C51\BIN\C51.EXE code.c BROWSE DEBUG OBJECTEXTEND
+
+stmt level    source
+
+   1          //功能：本程序用于测试L298驱动型号为28BYJ-48 DC5V步进电机
+   2          //时间：2012年7月5日
+   3          //与单片机接口为P0.0-P0.3
+   4          //单片机晶振：11.0592M
+   5          #include<reg51.h>
+   6          #define uint unsigned int
+   7          #define uchar unsigned char
+   8          uchar phasecw[4]={0x07,0x0b,0x0d,0x0e};//正转
+   9          uchar phaseccw[4]={0x0e,0x0d,0x0b,0x07};//反转
+  10          /***************延时函数*********************/
+  11          delay(uint x)
+  12          {
+  13   1              uint i,j;
+  14   1              for(i=0;i<x;i++)
+  15   1                      for(j=0;j<110;j++);
+  16   1      }
+  17          main()
+  18          {
+  19   1              uint i,j;
+  20   1              while(1)
+  21   1              {
+  22   2                      for(j=0;j<256;j++)//正转一圈
+  23   2                      {
+  24   3                              for(i=0;i<4;i++)
+  25   3                              {
+  26   4                                      P0=phasecw[i];
+  27   4                                      delay(5);
+  28   4                              }
+  29   3                      }
+  30   2      
+  31   2                      P0=0x00;//停止转动
+  32   2                      delay(1000);
+  33   2                      
+  34   2                      for(j=0;j<256;j++)//反转一圈
+  35   2                      {
+  36   3                              for(i=0;i<4;i++)
+  37   3                              {
+  38   4                                      P0=phaseccw[i];
+  39   4                                      delay(5);
+  40   4                              }
+  41   3                      }
+  42   2      
+  43   2                      P0=0x00;//停止转动
+  44   2                      delay(1000);
+  45   2              }
+  46   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    143    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      8       2
+   IDATA SIZE       =   ----    ----
+C51 COMPILER V7.06   CODE                                                                  07/05/2012 11:39:27 PAGE 2   
+
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
